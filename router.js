@@ -28,7 +28,7 @@ router.get("/exportcsv",(req,res)=>{
             .on("finish", function(){
                 res.send("Exportado")  
             }).pipe(ws);
-            setTimeout(function(){ws.end()},20000);
+            //setTimeout(function(){ws.end()},20000);
                         
         } catch (error) {
             console.log(error)
